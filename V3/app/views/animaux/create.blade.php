@@ -2,11 +2,11 @@
 
 require_once __DIR__ . '/../../config/bootstrap.php';
 
-use App\Controllers\AnimalController;
-use App\models\Animal;
+use app\Controllers\AnimalController;
+use app\Entities\Animal;
 
-// $animalModel = new Animal($entityManager);
-// $controller = new AnimalController($animalModel);
+$animalModel = new Animal($entityManager);
+$controller = new AnimalController($animalModel);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $type = $_POST['type'];

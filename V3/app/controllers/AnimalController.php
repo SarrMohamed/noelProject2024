@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace app\controllers;
 
-use App\Models\AnimalModel;
-use App\Entities\Animal;
+use app\Entities\Animal;
 
 class AnimalController
 {
